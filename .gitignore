@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# defensive: this skill's real output lives in ~/Downloads/industry-library,
+# never inside the repo — but ignore stray test runs just in case
+_index.md
+*-industry-report.md
+*-product-mapping.md
