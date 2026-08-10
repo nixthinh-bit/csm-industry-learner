@@ -109,10 +109,10 @@ Chỉ vậy thôi. Không cần CLI, không cần xác thực, không cần API 
 
 ## Cài đặt
 
+Chỉ 1 dòng, chạy trong terminal hoặc dán thẳng vào Claude Code:
+
 ```bash
-git clone https://github.com/nixthinh-bit/csm-industry-learner.git
-mkdir -p ~/.claude/skills
-cp -R csm-industry-learner ~/.claude/skills/csm-industry-learner
+mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/csm-industry-learner.git ~/.claude/skills/csm-industry-learner
 ```
 
 Khởi động lại Claude Code để nó nạp skill mới.

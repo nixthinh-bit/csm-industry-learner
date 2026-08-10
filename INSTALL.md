@@ -2,10 +2,10 @@
 
 ## As a personal Claude Code skill
 
+One line, in a terminal or pasted straight into Claude Code:
+
 ```bash
-git clone https://github.com/nixthinh-bit/csm-industry-learner.git
-mkdir -p ~/.claude/skills
-cp -R csm-industry-learner ~/.claude/skills/csm-industry-learner
+mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/csm-industry-learner.git ~/.claude/skills/csm-industry-learner
 ```
 
 Then in Claude Code:

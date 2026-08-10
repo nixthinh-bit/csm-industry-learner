@@ -100,10 +100,10 @@ That's it. No CLI, no auth, no API keys.
 
 ## Install
 
+One line, in a terminal or pasted straight into Claude Code:
+
 ```bash
-git clone https://github.com/nixthinh-bit/csm-industry-learner.git
-mkdir -p ~/.claude/skills
-cp -R csm-industry-learner ~/.claude/skills/csm-industry-learner
+mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/csm-industry-learner.git ~/.claude/skills/csm-industry-learner
 ```
 
 Restart Claude Code so it picks up the new skill.
