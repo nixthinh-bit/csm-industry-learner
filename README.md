@@ -95,7 +95,7 @@ gets better every time you use it.
 ## Guardrails
 
 Never invents a number, name, date, or system name. Unverifiable gets written as "Not found in
-retrieved sources." Inferred gets labeled H with a testing question.
+retrieved sources." Inferred gets numbered H1, H2 and so on, with a testing question.
 
 Never generalizes from one company to a whole industry.
 

@@ -115,7 +115,9 @@ Template quy định đầy đủ các mục và các bảng. Năm điều dễ 
 
 ### Bước 4: Tự kiểm trước khi cho user xem
 
-Chạy quality bar trong `references/report-template.md`. Tối thiểu:
+Đây là danh sách rút gọn, không thay quality bar đầy đủ. Luôn mở phần "Quality bar" trong
+`references/report-template.md` (và `references/mapping-template.md` nếu chạy Giai đoạn 2) và chạy
+hết, đặc biệt các mục "Đủ sâu" không liệt lại ở đây. Tối thiểu:
 
 - [ ] Mọi số/tên/ngày có `[S#]` tồn tại trong phụ lục; không `S#` nào trong phụ lục bị bỏ không dùng.
 - [ ] Mọi khẳng định cấp ngành nêu cỡ mẫu từ 3 doanh nghiệp trở lên, hoặc đã hạ cấp thành ví dụ có
@@ -131,6 +133,8 @@ Chạy quality bar trong `references/report-template.md`. Tối thiểu:
 - [ ] Mọi node và cạnh trong mọi sơ đồ truy được về một dòng trong bảng ngay trên nó.
 - [ ] Header ghi rõ thị trường và ngôn ngữ tra cứu. Thị trường không nói tiếng Anh mà toàn bộ nguồn
       là tiếng Anh thì bảng độ phủ phải nói thẳng ra.
+- [ ] Nguồn chưa fetch được (chỉ tóm tắt tìm kiếm) đánh dấu `🔍`; lớp nào toàn bộ nguồn là `🔍` thì
+      trạng thái tối đa 🟨.
 
 Sửa hết cái fail rồi mới sang Bước 5.
 
