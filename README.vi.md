@@ -44,9 +44,14 @@ mình đang tích hợp hay đang thay thế.
 **Ràng buộc cứng.** Pháp lý, kiểm toán, an toàn, ca kíp, thiết bị người dùng cuối. Thứ hay giết POC
 nhất và thường bị phát hiện quá muộn.
 
+Lớp 2, 3, 4 mỗi lớp có một sơ đồ: quy trình bàn giao ở đâu, ai bị ai đánh giá, hệ thống nào nằm trên
+bước nào. Sơ đồ không bao giờ mang thông tin mà bảng phía trên nó không có, nên nó là cách đọc nhanh
+hơn chứ không phải cách lách luật bằng chứng.
+
 Điểm quan trọng nhất là skill từ chối đoán mò. Mọi số, ngày, tên hệ thống đều mang trích dẫn nguồn.
 Cái gì không kiểm chứng được thì ghi thẳng "Chưa tìm được trong nguồn đã tra." Cái gì là suy luận thì
-gắn nhãn H (giả thuyết), kèm câu hỏi tìm hiểu để kiểm chứng.
+được đánh số H1, H2, kèm câu hỏi tìm hiểu để kiểm chứng. Đánh số để bạn mang đúng danh sách đó đi
+họp, rồi về đánh dấu cái nào khách xác nhận, cái nào khách bác bỏ.
 
 Nghiên cứu ngành có một cách hỏng mà nghiên cứu một công ty không có: suy một công ty ra cả ngành.
 Mọi khẳng định cấp ngành phải trích dẫn từ 3 doanh nghiệp trở lên, hoặc bị hạ cấp thành ví dụ có tên.
@@ -55,9 +60,11 @@ thật sự làm trong ngành.
 
 ## Quy trình hai giai đoạn
 
-**Giai đoạn 1, báo cáo ngành, luôn chạy.** Chốt phạm vi trong 1-2 dòng (lát cắt ngành, địa lý, độ
-sâu), rồi nghiên cứu web song song theo 5 lớp, ưu tiên tin tuyển dụng và mục "Rủi ro" trong báo cáo
-thường niên hơn là báo cáo quy mô thị trường. Sau đó tự kiểm theo tiêu chuẩn chất lượng, gồm cả phép
+**Giai đoạn 1, báo cáo ngành, luôn chạy.** Chốt phạm vi trong 1-2 dòng (lát cắt ngành, thị trường, độ
+sâu, và tra bằng tiếng gì), rồi nghiên cứu web song song theo 5 lớp, ưu tiên tin tuyển dụng và mục
+"Rủi ro" trong báo cáo thường niên hơn là báo cáo quy mô thị trường. Ngôn ngữ tra do thị trường quyết
+định chứ không do hội thoại: tra thị trường Indonesia thì chạy truy vấn tiếng Indonesia dù báo cáo
+vẫn viết tiếng Việt, vì tin tuyển dụng, diễn đàn nghề và văn bản pháp lý gần như không có bản dịch. Sau đó tự kiểm theo tiêu chuẩn chất lượng, gồm cả phép
 thử "một ngày": có kể được một ngày làm việc của người dùng tuyến đầu, không phải người ký hợp đồng,
 hay không? Nếu không thì nghiên cứu chưa xong. Cho xem bản nháp để duyệt, rồi mới ghi ra file Markdown
 và thêm một dòng vào chỉ mục thư viện đang tích luỹ.
@@ -85,6 +92,11 @@ tenant Lark của bạn. File nằm ở:
 
 `_index.md` là thứ khiến ngành thứ ba nhanh hơn ngành thứ nhất. Mỗi lần chạy đều đọc nó trước khi
 chốt phạm vi, và bổ sung mô-típ pain lặp lại nếu nhận ra.
+
+Báo cáo mở đầu bằng bảng độ phủ nói rõ lớp nào mỏng và vì sao, và mang hai mục dựng riêng cho bước
+sau: một trang mang đi họp liệt kê mọi giả thuyết có số kèm câu hỏi kiểm chứng, và một nhật ký kiểm
+chứng ghi lại khách đã nói gì. Đó là khác biệt giữa một bản chụp hết hạn sau một quý và một file tốt
+lên sau mỗi lần dùng.
 
 ## Guardrails
 
@@ -146,8 +158,9 @@ xem bản nháp báo cáo kèm trích dẫn `[S#]` trước khi ghi bất kỳ f
 /csm-industry-learner <tên ngành, ví dụ "bán lẻ tiện lợi tại Việt Nam">
 ```
 
-Bạn sẽ được hỏi vài câu ngắn để chốt phạm vi trước (lát cắt ngành, địa lý/quy mô, độ sâu nghiên cứu,
-có sẵn tài liệu gì không). Trả lời gọn, phần giá trị nằm ở bước nghiên cứu.
+Bạn sẽ được hỏi vài câu ngắn để chốt phạm vi trước (lát cắt ngành, thị trường và quy mô, độ sâu
+nghiên cứu, có sẵn tài liệu gì không). Thị trường đã rõ thì skill tự chốt ngôn ngữ tra và nói ra một
+dòng chứ không hỏi lại. Trả lời gọn, phần giá trị nằm ở bước nghiên cứu.
 
 Skill sau đó tự nghiên cứu, tự kiểm, rồi cho bạn xem bản nháp để duyệt trước khi ghi file. Sau khi
 báo cáo được lưu, skill hỏi bạn có muốn chạy Giai đoạn 2 không. Đồng ý và nêu tên sản phẩm, hoặc từ
