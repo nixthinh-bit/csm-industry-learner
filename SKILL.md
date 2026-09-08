@@ -12,7 +12,8 @@ description: Học nhanh một ngành/domain mới theo khung 5 lớp (kinh tế
 > **⚠️ LUẬT BẰNG CHỨNG (bắt buộc).** Mọi sự thật người đọc có thể hành động theo (một con số, một
 > ngày, một tên hệ thống, một khẳng định về cách ngành vận hành) đều phải mang `[S#]` trỏ về nguồn đã
 > tra trong lượt này. Không verify được thì viết thẳng **"Chưa tìm được trong nguồn đã tra."** Đang
-> suy luận thì gắn **H** (giả thuyết) kèm câu hỏi discovery kiểm chứng nó. Không được lấp khoảng
+> suy luận thì gắn `H#` (giả thuyết, có ID, đánh số chạy suốt báo cáo) kèm câu hỏi discovery kiểm
+> chứng nó. Không được lấp khoảng
 > trống bằng trung bình ngành, bằng lẽ thường, hay bằng kiến thức nhớ mà không tra lại trong lượt này.
 
 > **⚠️ LUẬT CỠ MẪU (bắt buộc, đặc thù của skill ngành).** Phân biệt "chuẩn ngành" với "cách làm của
@@ -26,9 +27,17 @@ description: Học nhanh một ngành/domain mới theo khung 5 lớp (kinh tế
 `LIBRARY` là `~/Downloads/industry-library`, thư viện ngành tích luỹ qua nhiều lần chạy.
 
 ## Ngôn ngữ
-Viết báo cáo theo ngôn ngữ user đang dùng trong hội thoại, tự nhận, không hỏi. Glossary luôn giữ
-thuật ngữ gốc (thường tiếng Anh hoặc tiếng địa phương của ngành) kèm cách người trong nghề thật sự
-gọi, kể cả khi phần còn lại viết bằng ngôn ngữ khác.
+
+Ba thứ khác nhau, đừng gộp làm một:
+
+- **Ngôn ngữ báo cáo.** Theo ngôn ngữ user đang dùng trong hội thoại, tự nhận, không hỏi.
+- **Ngôn ngữ tra cứu.** Tiếng bản địa của thị trường, cộng tiếng Anh cho bối cảnh xuyên biên giới.
+  Độc lập với ngôn ngữ báo cáo: tra thị trường Indonesia thì chạy truy vấn tiếng Indonesia dù báo cáo
+  viết tiếng Việt. Ba nhóm nguồn ROI cao nhất của skill này là tin tuyển dụng, diễn đàn nghề và văn
+  bản pháp lý, gần như không có bản tiếng Anh.
+- **Ngôn ngữ thuật ngữ.** Glossary luôn giữ thuật ngữ gốc kèm cách người trong nghề thật sự gọi, kể
+  cả khi phần còn lại viết bằng ngôn ngữ khác. Thuật ngữ có cả dạng bản địa lẫn dạng Anh thì ghi cả
+  hai và nói rõ cái nào dùng khi nói chuyện.
 
 ## Triết lý thiết kế
 1. Học theo dòng chảy công việc, không theo bách khoa toàn thư. Quy mô thị trường và top player nghe
@@ -55,8 +64,10 @@ thật sự mơ hồ:
 
 - **Ngành + lát cắt.** "Bán lẻ" quá rộng, chuỗi tiện lợi và điện máy và thời trang vận hành khác hẳn
   nhau. Nếu user nêu ngành rộng, đề xuất 2-3 lát cắt hẹp và để họ chọn.
-- **Địa lý & quy mô.** Việt Nam hay khu vực, SMB hay doanh nghiệp 100+ điểm bán. Ảnh hưởng nặng tới
-  Lớp 1 và Lớp 5.
+- **Thị trường, quy mô, ngôn ngữ tra cứu.** Thị trường nào (một nước hay cả khu vực), phân khúc nào
+  (SMB hay doanh nghiệp 100+ điểm bán), và tra bằng tiếng gì. Thị trường và quy mô ảnh hưởng nặng tới
+  Lớp 1 và Lớp 5. Ngôn ngữ tra mặc định là tiếng bản địa của thị trường cộng tiếng Anh; thị trường đã
+  rõ thì tự chốt theo mặc định, nói ra một dòng, không hỏi lại.
 - **Độ sâu.** Nhanh (khoảng 8-12 nguồn) hay đầy đủ (18-28 nguồn).
 - **Có sẵn gì không.** Link, tài liệu SOP, ghi chú buổi gặp trước, transcript. Nếu user đưa, đọc
   trước tiên và vẫn trích nguồn như mọi nguồn khác, ghi rõ là nguồn nội bộ.
@@ -77,18 +88,26 @@ bẫy. Nguyên tắc vận hành:
   thiếu.
 - Sổ nguồn ghi ngay khi đọc được sự thật, trong file scratch của session:
   ```
-  S1 | https://…/tuyen-dung-truong-ca | JD Trưởng ca, Công ty A | tuyển dụng | 2026-08-09
-  S2 | https://…/bao-cao-thuong-nien-2025.pdf | BCTN 2025 mục Rủi ro, Công ty B | sơ cấp | 2026-08-09
+  S1 | https://…/tuyen-dung-truong-ca | JD Trưởng ca, Công ty A | tuyển dụng | vi | 2026-08-09
+  S2 | https://…/bao-cao-thuong-nien-2025.pdf | BCTN 2025 mục Rủi ro, Công ty B | sơ cấp | vi | 2026-08-09
   ```
   Gắn `S#` vào lúc đọc, không gắn sau. Sự thật nào không ghi nguồn ngay thì coi như chưa verify.
+- Suy luận cũng cấp ID ngay tại chỗ, cùng lúc với `S#`: `H1`, `H2`, … đánh số chạy suốt báo cáo. Cấp
+  muộn là quên, và mọi `H#` sau đó phải có đúng một dòng trong sổ giả thuyết ở "Trang mang đi họp".
+- Chạy truy vấn bằng ngôn ngữ tra đã chốt ở Bước 1. Mẫu truy vấn trong playbook viết bằng tiếng Việt
+  làm ví dụ, phải dịch sang ngôn ngữ thị trường trước khi dùng.
 - Nếu một nguồn chỉ còn tồn tại dưới dạng tóm tắt kết quả tìm kiếm vì fetch trực tiếp thất bại, đánh
   dấu điều đó trong sổ nguồn và hạ độ tin của sự thật lấy từ nó.
 
 ### Bước 3: Soạn báo cáo theo `references/report-template.md`
 
-Template quy định đầy đủ 10 mục và các bảng. Ba điều dễ làm ẩu, nhắc lại ở đây:
+Template quy định đầy đủ các mục và các bảng. Năm điều dễ làm ẩu, nhắc lại ở đây:
 - Cột bằng chứng trong bảng Lớp 3 phải là số hoặc câu trích nguyên văn có `[S#]`, không được là nhận
   định của người viết.
+- `[S#]` nằm trong ô chứa sự thật, không tách thành cột "Nguồn" riêng ở cuối hàng. Ngoại lệ duy nhất
+  là cột *Bằng chứng* của Lớp 3.
+- Sơ đồ không mang thông tin mới. Mọi node và mọi cạnh phải truy được về một dòng trong bảng ngay
+  phía trên nó.
 - Ô trống thì ghi "Chưa tìm được trong nguồn đã tra", không để trắng vì người đọc dễ hiểu nhầm thành
   "không có".
 - Mâu thuẫn giữa các nguồn thì nêu ra, nói rõ nguồn nào được coi là hiện hành và vì sao. Đừng im lặng
@@ -106,14 +125,20 @@ Chạy quality bar trong `references/report-template.md`. Tối thiểu:
 - [ ] Có ngày tra cứu và cảnh báo dữ liệu ngành phân rã theo quý.
 - [ ] Phép thử "một ngày": báo cáo có đủ chi tiết để kể một ngày làm việc của người dùng cuối (không
       phải người ký hợp đồng) không? Nếu không, Lớp 3 còn mỏng, quay lại Bước 2.
+- [ ] Mọi suy luận có ID `H#` duy nhất, và mọi `H#` có đúng một dòng trong sổ giả thuyết, ngược lại
+      cũng vậy. Không còn `H` trần nào sót.
+- [ ] Bảng độ phủ điền đủ 5 lớp; mỗi lớp có dòng "Chốt lại"; "Trang mang đi họp" không rỗng.
+- [ ] Mọi node và cạnh trong mọi sơ đồ truy được về một dòng trong bảng ngay trên nó.
+- [ ] Header ghi rõ thị trường và ngôn ngữ tra cứu. Thị trường không nói tiếng Anh mà toàn bộ nguồn
+      là tiếng Anh thì bảng độ phủ phải nói thẳng ra.
 
 Sửa hết cái fail rồi mới sang Bước 5.
 
 ### Bước 5: Cổng duyệt, rồi mới ghi file
 
-In phần xương của báo cáo trong hội thoại: mục "Đọc trong 60 giây" + Lớp 2 + Lớp 3 + "Điều còn chưa
-biết". Kèm ghi chú độ phủ: bao nhiêu nguồn, lấy mẫu bao nhiêu doanh nghiệp, lớp nào mỏng và vì sao.
-Hỏi duyệt hoặc sửa.
+In phần xương của báo cáo trong hội thoại: bảng "Độ phủ nghiên cứu" + "Đọc trong 60 giây" + "Trang
+mang đi họp" + Lớp 2 + Lớp 3. Bảng độ phủ thay luôn cho ghi chú độ phủ viết bằng văn xuôi, vì nó đã
+nói đủ: lớp nào mỏng, cỡ mẫu bao nhiêu, nguồn bằng tiếng gì. Hỏi duyệt hoặc sửa.
 
 Sau khi user duyệt:
 - Ghi `LIBRARY/<slug>/<slug>-industry-report.md`. `<slug>` là tên ngành dạng kebab-case không dấu, ví
@@ -142,16 +167,23 @@ Nếu có:
 
 Sau khi duyệt, ghi `LIBRARY/<slug>/<slug>-product-mapping.md`, cùng luật không ghi đè im lặng.
 
-Đóng lượt bằng đúng 4 thứ: đường dẫn 2 file, 3 điều quan trọng nhất cho buổi gặp khách kế tiếp,
-khoảng trống bằng chứng lớn nhất và cách rẻ nhất để lấp nó, và gợi ý chạy `/customer-research-poc`
-cho một account cụ thể trong ngành, cùng `/csm-onboarding-plan` khi đã có khách hàng thật.
+Đóng lượt bằng đúng 4 thứ: đường dẫn 2 file, trỏ user vào mục "Trang mang đi họp" của báo cáo (sổ
+giả thuyết cần khách xác nhận, 3 từ phải nói đúng, 1 điều dễ giết POC nhất), khoảng trống bằng chứng
+lớn nhất và cách rẻ nhất để lấp nó, và gợi ý chạy `/customer-research-poc` cho một account cụ thể
+trong ngành, cùng `/csm-onboarding-plan` khi đã có khách hàng thật.
+
+Dặn thêm một câu: sau buổi gặp quay lại đánh dấu cột *Trạng thái* trong sổ giả thuyết và ghi một dòng
+vào "Nhật ký kiểm chứng". Đó là thứ giữ cho hồ sơ ngành lớn lên bằng dữ liệu thật thay vì chỉ cũ đi
+theo quý.
 
 ---
 
 ## Guardrails
 
 - Không bịa số, tên, ngày, tên hệ thống. Không verify được thì ghi "Chưa tìm được trong nguồn đã
-  tra"; suy luận thì gắn **H** kèm câu hỏi kiểm chứng.
+  tra"; suy luận thì gắn `H#` có ID kèm câu hỏi kiểm chứng.
+- Sơ đồ không phải chỗ lách luật bằng chứng. Vẽ một node hay một mũi tên không có trong bảng phía
+  trên nó cũng là bịa.
 - Không suy một doanh nghiệp ra cả ngành. Nêu cỡ mẫu cho mọi khẳng định cấp ngành.
 - Không nhầm quy mô tập đoàn với công ty con trong nước, không nhầm vốn hoá/định giá với doanh thu.
 - Không viết bằng giọng chuyên gia ngành. Header báo cáo phải nhắc lại vị thế "đủ hiểu để hỏi đúng
