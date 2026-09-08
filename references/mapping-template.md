@@ -61,6 +61,7 @@ khiến POC chết giữa chừng).
 - **Tiêu chí thất bại:** <ngưỡng cụ thể, dám viết ra thì POC mới có giá trị>
 - **Ngoài phạm vi:** <nêu rõ hệ thống nào vẫn là hệ thống của sự thật>
 - **Phụ thuộc phòng ban khác?** Không / <nếu có thì đây không phải POC ưu tiên>
+- **Ước lượng độ dễ triển khai & tác động (1–10):** <độ dễ>/<tác động>
 
 ### POC #2: <tên>
 <như trên>
@@ -69,8 +70,9 @@ khiến POC chết giữa chừng).
 <như trên>
 
 **Xếp hạng.** Ba điểm dưới đây phải khớp đúng ba POC ở trên, không thêm POC nào chỉ để lấp góc phần
-tư. Đây là lớp nhìn nhanh; ba khối mô tả ở trên mới là nguồn sự thật, renderer không hỗ trợ
-`quadrantChart` thì mất sơ đồ chứ không mất thông tin.
+tư, và toạ độ phải lấy đúng từ dòng "Ước lượng độ dễ triển khai & tác động" của mỗi khối (chia 10),
+không tự chọn số theo cảm tính. Đây là lớp nhìn nhanh; ba khối mô tả ở trên mới là nguồn sự thật,
+renderer không hỗ trợ `quadrantChart` thì mất sơ đồ chứ không mất thông tin.
 
 ```mermaid
 quadrantChart
@@ -146,7 +148,8 @@ Trạng thái: `⬜ chưa hỏi` · `✅ khách xác nhận` · `❌ khách bác
 - [ ] Mọi năng lực sản phẩm có `[P#]`; không có tính năng nào được nêu từ trí nhớ mà không có nguồn.
 - [ ] Header nói rõ hồ sơ sản phẩm dựng từ nguồn công khai hay có tài liệu user bổ sung.
 - [ ] Đủ 3 POC, mỗi cái thoả cả 6 ràng buộc, có tiêu chí thất bại viết trước.
-- [ ] Sơ đồ xếp hạng đúng 3 điểm, khớp đúng 3 POC ở trên, không thêm không bớt.
+- [ ] Sơ đồ xếp hạng đúng 3 điểm, khớp đúng 3 POC ở trên, không thêm không bớt, và toạ độ khớp
+      với dòng "Ước lượng độ dễ triển khai & tác động" ghi trong từng khối POC, không phải số tự chọn.
 - [ ] Đủ 10 câu hỏi discovery; cột *Neo vào* của mỗi câu trỏ tới một `H#` hoặc một lớp cụ thể.
 - [ ] Mọi `H#` trong sổ giả thuyết của báo cáo ngành xuất hiện ở cột *Neo vào* của ít nhất một câu hỏi.
 - [ ] Mục "sản phẩm không làm được gì" không rỗng.

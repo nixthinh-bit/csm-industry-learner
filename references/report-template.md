@@ -14,8 +14,10 @@ lý do lớp đó tồn tại, không được gộp vào đâu cả.
 
 ## Luật vẽ sơ đồ
 
-- Sơ đồ không mang thông tin mới. Mọi node và mọi cạnh phải truy được về một dòng trong bảng ngay
-  phía trên nó. Vẽ một mũi tên không có trong bảng cũng là bịa.
+- Sơ đồ không mang thông tin mới. Mọi node và mọi cạnh phải truy được về một dòng trong một bảng
+  đã xuất hiện trước đó trong báo cáo (thường là bảng ngay phía trên nó; riêng bản đồ hệ thống Lớp 4
+  được phép nối node hệ thống với node bước quy trình của bảng Lớp 2, vì đó chính là mục đích của sơ
+  đồ này). Vẽ một mũi tên không có trong bảng nào cũng là bịa.
 - Nhánh nào là suy luận thì gắn `H#` ngay trong nhãn node.
 - Bảng dưới 3 dòng thì không vẽ, vẽ chỉ tốn chỗ.
 - Tối đa khoảng 9 node. Quá thì cắt nhánh phụ, không thu nhỏ chữ.
@@ -34,7 +36,8 @@ lý do lớp đó tồn tại, không được gộp vào đâu cả.
 > chính là nội dung buổi discovery.
 > **Hạn dùng:** dữ liệu ngành phân rã theo quý. Sau <YYYY-MM-DD + 3 tháng> nên chạy lại thay vì dùng lại.
 >
-> **Ký hiệu:** `[S#]` sự thật có nguồn · `H#` giả thuyết chưa kiểm chứng · `❓` chưa tìm được trong nguồn đã tra
+> **Ký hiệu:** `[S#]` sự thật có nguồn · `H#` giả thuyết chưa kiểm chứng · `❓` chưa tìm được trong
+> nguồn đã tra · `🔍` nguồn chỉ có tóm tắt tìm kiếm, chưa fetch trực tiếp được
 
 ## Độ phủ nghiên cứu
 
@@ -46,8 +49,9 @@ lý do lớp đó tồn tại, không được gộp vào đâu cả.
 | 4 · Từ vựng & hệ thống | | | | |
 | 5 · Ràng buộc cứng | | | | |
 
-🟩 đầy = từ 3 doanh nghiệp trở lên và không ô nào ❓ · 🟨 mỏng = dưới 3 doanh nghiệp hoặc còn ô ❓ ·
-🟥 rỗng = không tìm được gì dùng được.
+🟩 đầy = từ 3 doanh nghiệp trở lên, không ô nào ❓, và không phải toàn bộ nguồn của lớp đó đánh dấu
+🔍 · 🟨 mỏng = dưới 3 doanh nghiệp, còn ô ❓, hoặc toàn bộ nguồn chỉ đánh dấu 🔍 (chỉ tóm tắt tìm
+kiếm, chưa fetch được) · 🟥 rỗng = không tìm được gì dùng được.
 
 <Thị trường không nói tiếng Anh mà cột "Ngôn ngữ nguồn" toàn tiếng Anh: nói thẳng ở đây rằng lớp đó
 mỏng vì lý do ngôn ngữ, đừng để người đọc hiểu nhầm thành ngành minh bạch.>
@@ -233,11 +237,15 @@ Ghi vai trò người nói, không ghi tên cá nhân.>
 
 ## Phụ lục · Nguồn
 
-| ID | Nguồn | Loại | Ngày tra |
-|---|---|---|---|
-| S1 | [<tên tài liệu>](<url>) | tuyển dụng / sơ cấp / pháp lý / diễn đàn / nhà cung cấp | |
+| ID | Nguồn | Doanh nghiệp | Loại | Ngày tra |
+|---|---|---|---|---|
+| S1 | [<tên tài liệu>](<url>) | <tên DN, hoặc để trống nếu nguồn không gắn với 1 DN cụ thể như văn bản pháp lý> | `tuyển dụng` / `sơ cấp` / `trang DN` / `pháp lý` / `diễn đàn nghề` / `nhà cung cấp` / `thị trường` | |
 
-<Nguồn chỉ còn tồn tại dưới dạng tóm tắt kết quả tìm kiếm vì fetch thất bại: ghi rõ ở cột Loại.>
+Cột *Loại* dùng đúng 7 nhãn chuẩn ở bảng ưu tiên nguồn trong `layer-playbook.md`, không tự đặt nhãn
+khác. Cột *Doanh nghiệp* là căn cứ đếm cơ học cho "Cỡ mẫu DN" ở Bảng độ phủ nghiên cứu.
+
+Nguồn chỉ còn tồn tại dưới dạng tóm tắt kết quả tìm kiếm vì fetch trực tiếp thất bại: thêm `🔍` ngay
+trước nhãn Loại, ví dụ `🔍 tuyển dụng`. Đây là căn cứ để Bảng độ phủ hạ trạng thái xuống tối đa 🟨.
 
 <Nếu có nguồn nội bộ do user cung cấp, để thành bảng riêng bên dưới và ghi rõ là nội bộ.>
 ```
@@ -263,8 +271,8 @@ Ghi vai trò người nói, không ghi tên cá nhân.>
 - [ ] Bảng Lớp 3 có ít nhất 3 vai trò, trong đó có ít nhất 1 vai trò tuyến đầu (không phải quản lý).
 - [ ] Lớp 2 chỉ ra được ít nhất 2 điểm bàn giao.
 - [ ] Lớp 5 có dòng "thứ hay giết POC nhất", không bỏ trống.
-- [ ] Glossary từ 15 từ trở lên, có cột "người trong nghề thật sự gọi là" được điền, không chỉ định
-      nghĩa sách vở.
+- [ ] Glossary từ 20 từ trở lên (mục tiêu 20–30), có cột "người trong nghề thật sự gọi là" được
+      điền, không chỉ định nghĩa sách vở.
 
 **Tính trung thực**
 - [ ] Mọi suy luận có ID `H#` duy nhất, không trộn lẫn với sự thật có nguồn, không còn `H` trần nào sót.
@@ -283,6 +291,8 @@ Ghi vai trò người nói, không ghi tên cá nhân.>
 - [ ] Header ghi rõ thị trường và ngôn ngữ tra cứu.
 - [ ] Thị trường không nói tiếng Anh: có nguồn tiếng bản địa ở Lớp 3, Lớp 4, Lớp 5. Không có thì bảng
       độ phủ phải nói thẳng rằng lớp đó mỏng vì lý do ngôn ngữ.
+- [ ] Lớp nào toàn bộ nguồn trong Phụ lục chỉ đánh dấu 🔍 (chưa fetch được) thì trạng thái ở Bảng độ
+      phủ tối đa là 🟨, không được 🟩.
 
 Cái nào fail thì sửa. Riêng phép thử "một ngày" fail thì quay lại Bước 2 nghiên cứu thêm, không sửa
 bằng chữ.

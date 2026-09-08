@@ -9,15 +9,18 @@ Tài liệu này trả lời: với mỗi lớp, tra ở đâu, hỏi câu gì, 
 Xếp theo ROI thực tế, cao xuống thấp. Đây là điểm khác biệt lớn nhất so với `customer-research-poc`:
 nghiên cứu ngành ăn nguồn vận hành, không ăn nguồn tài chính.
 
-| # | Nguồn | Nuôi lớp nào | Vì sao mạnh |
-|---|---|---|---|
-| 1 | Tin tuyển dụng của doanh nghiệp trong ngành | 3, 4 | Mô tả chính xác công việc hằng ngày, công cụ đang chạy, và KPI được đo. Là nguồn duy nhất nói thẳng "quản lý X cửa hàng, báo cáo Y hằng ngày, sử dụng phần mềm Z". Bị bỏ qua nhiều nhất. |
-| 2 | Mục "Rủi ro" + "Thảo luận của Ban điều hành" trong báo cáo thường niên / bản cáo bạch của doanh nghiệp niêm yết cùng ngành | 1, 5 | Doanh nghiệp tự khai điểm yếu vận hành bằng ngôn ngữ chính xác và có số. Bỏ qua phần marketing đầu báo cáo. |
-| 3 | Trang sản phẩm / B2B / tuyển dụng trên site của chính doanh nghiệp | 1, 2 | Thường là chỗ cập nhật nhất về quy mô vận hành (số điểm bán, số nhân sự, vùng phủ), mới hơn trang "Về chúng tôi", mới hơn nhiều so với báo chí. |
-| 4 | Văn bản pháp lý, quy chuẩn, thông tư ngành | 5 | Ràng buộc cứng là thứ giết POC nhiều nhất. Nguồn này chính xác và không phân rã nhanh. |
-| 5 | Diễn đàn / hội nhóm nghề, hội chợ ngành, bài chia sẻ của người trong nghề | 3, 4 | Ngôn ngữ thật và than phiền thật. Là nơi lấy được cách người ta thật sự gọi một thứ. |
-| 6 | Nhà cung cấp phần mềm chuyên ngành (trang khách hàng, case study) | 2, 4 | Họ mô tả quy trình ngành rất sát để bán hàng. Đọc phần mô tả quy trình, bỏ qua phần con số hiệu quả vì đó là marketing. |
-| 7 | Báo cáo thị trường, phân tích ngành | bối cảnh | Để cuối. Hữu ích cho câu mở đầu, gần như vô dụng cho việc thiết kế POC. |
+| # | Nguồn | Nhãn chuẩn (cột Loại ở Phụ lục) | Nuôi lớp nào | Vì sao mạnh |
+|---|---|---|---|---|
+| 1 | Tin tuyển dụng của doanh nghiệp trong ngành | `tuyển dụng` | 3, 4 | Mô tả chính xác công việc hằng ngày, công cụ đang chạy, và KPI được đo. Là nguồn duy nhất nói thẳng "quản lý X cửa hàng, báo cáo Y hằng ngày, sử dụng phần mềm Z". Bị bỏ qua nhiều nhất. |
+| 2 | Mục "Rủi ro" + "Thảo luận của Ban điều hành" trong báo cáo thường niên / bản cáo bạch của doanh nghiệp niêm yết cùng ngành | `sơ cấp` | 1, 5 | Doanh nghiệp tự khai điểm yếu vận hành bằng ngôn ngữ chính xác và có số. Bỏ qua phần marketing đầu báo cáo. |
+| 3 | Trang sản phẩm / B2B / tuyển dụng trên site của chính doanh nghiệp | `trang DN` | 1, 2 | Thường là chỗ cập nhật nhất về quy mô vận hành (số điểm bán, số nhân sự, vùng phủ), mới hơn trang "Về chúng tôi", mới hơn nhiều so với báo chí. |
+| 4 | Văn bản pháp lý, quy chuẩn, thông tư ngành | `pháp lý` | 5 | Ràng buộc cứng là thứ giết POC nhiều nhất. Nguồn này chính xác và không phân rã nhanh. |
+| 5 | Diễn đàn / hội nhóm nghề, hội chợ ngành, bài chia sẻ của người trong nghề | `diễn đàn nghề` | 3, 4 | Ngôn ngữ thật và than phiền thật. Là nơi lấy được cách người ta thật sự gọi một thứ. |
+| 6 | Nhà cung cấp phần mềm chuyên ngành (trang khách hàng, case study) | `nhà cung cấp` | 2, 4 | Họ mô tả quy trình ngành rất sát để bán hàng. Đọc phần mô tả quy trình, bỏ qua phần con số hiệu quả vì đó là marketing. |
+| 7 | Báo cáo thị trường, phân tích ngành | `thị trường` | bối cảnh | Để cuối. Hữu ích cho câu mở đầu, gần như vô dụng cho việc thiết kế POC. |
+
+Cột "Nhãn chuẩn" là từ vựng bắt buộc dùng ở cột *Loại* trong Phụ lục · Nguồn của báo cáo, để cỡ mẫu
+và loại nguồn đếm được nhất quán qua nhiều lượt chạy thay vì mỗi lần tự đặt tên khác nhau.
 
 ---
 

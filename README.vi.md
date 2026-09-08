@@ -101,7 +101,7 @@ lên sau mỗi lần dùng.
 ## Guardrails
 
 Không bao giờ bịa số, tên, ngày, tên hệ thống. Không kiểm chứng được thì ghi "Chưa tìm được trong
-nguồn đã tra." Suy luận thì gắn nhãn H kèm câu hỏi kiểm chứng.
+nguồn đã tra." Suy luận thì được đánh số H1, H2... kèm câu hỏi kiểm chứng.
 
 Không bao giờ suy một công ty ra cả ngành.
 
