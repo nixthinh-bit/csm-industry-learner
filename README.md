@@ -36,9 +36,15 @@ you're integrating or replacing.
 **Hard constraints.** Legal, audit, safety, shift work, end-user devices. The thing most likely to
 kill a POC, usually discovered too late.
 
+Layers 2, 3 and 4 each come with a diagram: where the process hands off between departments, who is
+measured by whom, and which system sits on which step. A diagram never carries anything the tables
+above it don't, so it stays a way to read faster, not a way to slip past the evidence rules.
+
 The part that matters most: it refuses to guess. Every number, date, or system name carries a
 citation. What can't be verified gets written as "Not found in retrieved sources." What's inferred
-gets labeled **H** for hypothesis, with the discovery question that would test it.
+gets numbered `H1`, `H2` and so on, each with the discovery question that would test it. They're
+numbered so you can carry them into the meeting and mark afterwards which ones the customer confirmed
+and which ones they shot down.
 
 Industry research has a failure mode that company research doesn't: generalizing from one company.
 Every industry-level claim has to cite 3+ different businesses or get demoted to a named example.
@@ -47,9 +53,12 @@ someone who actually works in the industry.
 
 ## Two-phase workflow
 
-**Phase 1, industry report, always runs.** Scope in 1-2 lines (industry slice, geography, research
-depth), then parallel web research across the 5 layers, weighted toward job postings and
-annual-report risk sections rather than market-sizing decks. Then a self-check against a quality bar,
+**Phase 1, industry report, always runs.** Scope in 1-2 lines (industry slice, market, research
+depth, and which language to research in), then parallel web research across the 5 layers, weighted
+toward job postings and annual-report risk sections rather than market-sizing decks. The research
+language is set by the market, not by the conversation: an Indonesian market gets Indonesian queries
+even when the report itself is written in English, because job postings, trade forums and regulations
+rarely exist in translation. Then a self-check against a quality bar,
 including a "day in the life" test: can you narrate one day of the frontline user, not the person who
 signs the contract? If not, the research isn't done. Show the draft for approval, then write it to a
 local Markdown file and append a line to a running library index.
@@ -76,6 +85,12 @@ Local Markdown only. No Lark Doc, no lark-cli, this skill never touches your Lar
 
 The `_index.md` is what makes the third industry faster than the first. Each run reads it before
 scoping and appends any recurring pain motif it recognizes.
+
+The report opens with a coverage table saying which of the 5 layers came back thin and why, and it
+carries two sections built for what happens next: a page to take into the meeting, listing every
+numbered hypothesis with the question that tests it, and a verification log for what the customer
+actually said. That's the difference between a snapshot that ages out in a quarter and a file that
+gets better every time you use it.
 
 ## Guardrails
 
@@ -137,8 +152,9 @@ shows a draft report with `[S#]` citations before writing anything to disk.
 /csm-industry-learner <industry, e.g. "convenience retail in Vietnam">
 ```
 
-You'll get a few short scoping questions first (industry slice, geography/scale, research depth,
-anything you already have). Answer briefly, the research is where the value is.
+You'll get a few short scoping questions first (industry slice, market and scale, research depth,
+anything you already have). If the market makes the research language obvious, the skill picks it and
+says so instead of asking. Answer briefly, the research is where the value is.
 
 The skill then researches, self-checks, and shows you a draft to approve before writing anything to
 disk. Once the report is saved, it asks if you want Phase 2 (product mapping). Say yes and name your

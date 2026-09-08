@@ -21,6 +21,23 @@ nghiên cứu ngành ăn nguồn vận hành, không ăn nguồn tài chính.
 
 ---
 
+## Bản địa hoá truy vấn
+
+Mẫu truy vấn trong tài liệu này viết bằng tiếng Việt làm ví dụ. Dịch sang ngôn ngữ thị trường trước
+khi chạy, và đừng dịch từng chữ: dùng đúng cách người bản địa gọi tên chức danh, tên tài liệu, tên
+loại giấy tờ.
+
+- **Tra bằng tiếng bản địa:** tin tuyển dụng, diễn đàn nghề, văn bản pháp lý, trang doanh nghiệp nội
+  địa. Đây đúng là nhóm 1, 4, 5 trong bảng trên, tức nhóm ROI cao nhất, và gần như không có bản tiếng
+  Anh.
+- **Tra bằng tiếng Anh:** doanh nghiệp niêm yết có công bố song ngữ, báo cáo ngành cấp khu vực, nhà
+  cung cấp phần mềm quốc tế.
+- Không hardcode tên trang cụ thể của bất kỳ thị trường nào. Tìm theo *loại nguồn*: sàn tuyển dụng
+  lớn nhất thị trường, cổng công bố thông tin của sàn chứng khoán, cổng văn bản của cơ quan quản lý
+  ngành, hội nhóm nghề. Đó là thứ giữ cho skill dùng được ở thị trường mới mà không phải sửa file.
+
+---
+
 ## Lớp 1 · Kinh tế đơn vị
 
 Cần ra được: họ kiếm tiền trên đơn vị gì, biên lợi nhuận mỏng hay dày, chu kỳ mùa vụ, đâu là mùa rảnh
@@ -77,10 +94,13 @@ Cách khai thác JD cho đúng: đọc từ 10 JD trở lên của 3 vị trí k
 trưởng nhóm/ca, quản lý cấp trung). Trích ra: động từ lặp lại nhiều nhất là công việc hằng ngày, con
 số xuất hiện trong phần "yêu cầu/chỉ tiêu" là KPI, tên phần mềm được nêu là Lớp 4.
 
+Câu "báo cáo cho ai" trong JD là thứ nuôi sơ đồ *ai đo ai* của Lớp 3. Tra là để vẽ được sơ đồ đó,
+không phải để có thêm một bảng.
+
 Vì sao CSM cần: người dùng chỉ đổi hành vi khi cái mới giúp họ đẹp KPI. Không biết KPI thì mọi kế
 hoạch adoption đều là đoán.
 
-Cạm bẫy: KPI trong JD tuyển dụng là KPI được công bố, KPI thật đôi khi khác. Đánh dấu **H** khi suy ra
+Cạm bẫy: KPI trong JD tuyển dụng là KPI được công bố, KPI thật đôi khi khác. Đánh dấu `H#` khi suy ra
 KPI thật, để dành cho câu hỏi discovery. Không được lấy KPI của một công ty làm KPI của cả ngành.
 
 ---
@@ -96,12 +116,15 @@ Mẫu truy vấn:
 - `thuật ngữ "<ngành>" là gì`
 - Diễn đàn nghề: đọc cách người ta viết tắt và nói tắt.
 
+Khi tìm được một hệ thống, tìm luôn xem nó gắn vào bước nào của Lớp 2. Đó là thứ nuôi *bản đồ hệ
+thống*, và bước nào không có hệ thống nào gắn vào chính là khoảng trống đáng chú ý nhất.
+
 Vì sao CSM cần: sai từ vựng là mất uy tín trong 5 phút đầu. Hệ thống hiện có quyết định bạn ở vị thế
 tích hợp hay thay thế, hai câu chuyện bán hàng hoàn toàn khác nhau, và nhầm thì mất deal.
 
 Cạm bẫy: đừng chép định nghĩa sách vở. Một thuật ngữ có định nghĩa chuẩn nhưng người trong nghề gọi
-bằng tên khác thì phải ghi cả hai, và ghi rõ cái nào dùng khi nói chuyện. Mỗi mục glossary đánh dấu đã
-verify hay suy luận.
+bằng tên khác thì phải ghi cả hai, và ghi rõ cái nào dùng khi nói chuyện. Mỗi mục glossary gắn `[S#]` nếu đã verify,
+`H#` nếu là suy luận.
 
 ---
 
@@ -137,8 +160,8 @@ rút ngắn được nhiều giờ tra cứu.
 - Kiến thức nằm trong đầu vài người: nghỉ việc là mất, đào tạo người mới rất lâu.
 - Nhiều nguồn sự thật cho cùng một con số: mỗi phòng ban có bản riêng, họp thì cãi nhau về số.
 
-Khi nhận ra một mô-típ trong ngành đang tra, ghi nó vào Lớp 8 của báo cáo và append vào `_index.md`
-để lần sau dò trúng ngay.
+Khi nhận ra một mô-típ trong ngành đang tra, ghi nó vào mục *Mô-típ pain lặp lại* của báo cáo và
+append vào `_index.md` để lần sau dò trúng ngay.
 
 ---
 
@@ -152,5 +175,8 @@ Khi nhận ra một mô-típ trong ngành đang tra, ghi nó vào Lớp 8 của 
 - Nội dung do AI sinh ra trên các trang SEO ngành. Dấu hiệu: không có tác giả, không có số cụ thể,
   câu chữ chung chung. Không dùng làm nguồn.
 - Dữ liệu cũ. Ghi ngày của mọi số. Ngành thay đổi nhanh nhất ở Lớp 4 (hệ thống) và Lớp 5 (pháp lý).
+- Thị trường không nói tiếng Anh mà toàn bộ nguồn lấy được là tiếng Anh. Đó là dấu hiệu nghiên cứu
+  hụt, không phải dấu hiệu ngành minh bạch: nghĩa là chưa chạm được vào tin tuyển dụng, diễn đàn nghề
+  và văn bản pháp lý bản địa. Nói thẳng điều đó trong bảng độ phủ thay vì im lặng.
 - Tra quá lâu. Kiến thức ngành có tỷ suất giảm dần rất nhanh. Hết dấu hiệu ra sự thật mới thì dừng và
   mang bản nháp đi hỏi người thật, đó là cách học nhanh nhất, không phải tra thêm.

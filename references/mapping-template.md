@@ -3,7 +3,8 @@
 Ghi ra `LIBRARY/<slug>/<slug>-product-mapping.md`. Đây là tài liệu nội bộ, chiến thuật, tách khỏi báo
 cáo ngành để báo cáo ngành có thể chia sẻ rộng hơn.
 
-Nguồn sản phẩm dùng tiền tố `P#`, tách hẳn khỏi nguồn ngành `S#`.
+Nguồn sản phẩm dùng tiền tố `P#`, tách hẳn khỏi nguồn ngành `S#`. Áp cùng luật trích dẫn với báo cáo
+ngành: một sự thật, một dấu nguồn, đặt ngay trong ô chứa nó, không tách cột "Nguồn" riêng.
 
 ---
 
@@ -19,9 +20,9 @@ Nguồn sản phẩm dùng tiền tố `P#`, tách hẳn khỏi nguồn ngành `
 
 ## Hồ sơ năng lực sản phẩm (rút gọn)
 
-| Năng lực | Tính năng/module hiện thực nó | Nguồn |
-|---|---|---|
-| | | [P#] |
+| Năng lực | Tính năng/module hiện thực nó |
+|---|---|
+| | <…> [P#] |
 
 <Nếu có mâu thuẫn giữa tài liệu user và web, nêu ra ở đây và nói rõ đã lấy cái nào.>
 
@@ -67,6 +68,24 @@ khiến POC chết giữa chừng).
 ### POC #3: <tên>
 <như trên>
 
+**Xếp hạng.** Ba điểm dưới đây phải khớp đúng ba POC ở trên, không thêm POC nào chỉ để lấp góc phần
+tư. Đây là lớp nhìn nhanh; ba khối mô tả ở trên mới là nguồn sự thật, renderer không hỗ trợ
+`quadrantChart` thì mất sơ đồ chứ không mất thông tin.
+
+```mermaid
+quadrantChart
+  title Tác động và công sức triển khai
+  x-axis "Khó triển khai" --> "Dễ triển khai"
+  y-axis "Tác động thấp" --> "Tác động cao"
+  quadrant-1 "Làm trước"
+  quadrant-2 "Đáng làm, cần sponsor mạnh"
+  quadrant-3 "Bỏ"
+  quadrant-4 "Làm nếu còn chỗ"
+  "POC #1": [0.8, 0.8]
+  "POC #2": [0.4, 0.7]
+  "POC #3": [0.6, 0.4]
+```
+
 ---
 
 ## 10 câu hỏi discovery, làm rõ doanh nghiệp này khác chuẩn ngành ở đâu
@@ -77,11 +96,14 @@ khiến POC chết giữa chừng).
 > Mẫu tốt: *"Khi ca đêm bàn giao cho ca sáng, biên bản đó đang ghi ở đâu và ai đọc nó?"*
 > Mẫu xấu: *"Anh gặp khó khăn gì trong quản lý?"*
 >
-> Mọi **H** trong báo cáo ngành phải có ít nhất một câu ở đây kiểm chứng nó.
+> Cột *Neo vào* ghi `H#` cụ thể hoặc `Lớp <n>`, không ghi chung chung. Mọi `H#` trong sổ giả thuyết
+> của báo cáo ngành phải xuất hiện ở cột này ít nhất một lần.
 
-| # | Câu hỏi | Neo vào | Nếu trả lời khác chuẩn ngành thì sao |
-|---|---|---|---|
-| 1 | | Lớp <n> / **H** <…> | <đổi POC nào, đổi lập luận nào> |
+| # | Câu hỏi | Neo vào | Nếu trả lời khác chuẩn ngành thì sao | Trạng thái |
+|---|---|---|---|---|
+| 1 | | `H<n>` / Lớp <n> | <đổi POC nào, đổi lập luận nào> | ⬜ chưa hỏi |
+
+Trạng thái: `⬜ chưa hỏi` · `✅ khách xác nhận` · `❌ khách bác bỏ` · `🔄 vẫn mở`
 
 ---
 
@@ -107,9 +129,9 @@ khiến POC chết giữa chừng).
 
 ## Phụ lục · Nguồn sản phẩm
 
-| ID | URL / tên file | Tài liệu | Ngày |
-|---|---|---|---|
-| P1 | | | |
+| ID | Nguồn | Ngày |
+|---|---|---|
+| P1 | [<tên tài liệu>](<url>) hoặc `<tên file user cung cấp>` | |
 ```
 
 ---
@@ -124,7 +146,8 @@ khiến POC chết giữa chừng).
 - [ ] Mọi năng lực sản phẩm có `[P#]`; không có tính năng nào được nêu từ trí nhớ mà không có nguồn.
 - [ ] Header nói rõ hồ sơ sản phẩm dựng từ nguồn công khai hay có tài liệu user bổ sung.
 - [ ] Đủ 3 POC, mỗi cái thoả cả 6 ràng buộc, có tiêu chí thất bại viết trước.
-- [ ] Đủ 10 câu hỏi discovery; mỗi câu neo được vào một mục cụ thể trong báo cáo ngành.
-- [ ] Mọi **H** trong báo cáo ngành có ít nhất một câu hỏi kiểm chứng.
+- [ ] Sơ đồ xếp hạng đúng 3 điểm, khớp đúng 3 POC ở trên, không thêm không bớt.
+- [ ] Đủ 10 câu hỏi discovery; cột *Neo vào* của mỗi câu trỏ tới một `H#` hoặc một lớp cụ thể.
+- [ ] Mọi `H#` trong sổ giả thuyết của báo cáo ngành xuất hiện ở cột *Neo vào* của ít nhất một câu hỏi.
 - [ ] Mục "sản phẩm không làm được gì" không rỗng.
 - [ ] Không có tuyên bố hiệu quả nào lấy từ case study marketing của bất kỳ nhà cung cấp nào.
