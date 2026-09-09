@@ -1,4 +1,4 @@
-# csm-industry-learner (Tiếng Việt)
+# gtm-industry-research (Tiếng Việt)
 
 > Bản chính bằng tiếng Anh: [README.md](README.md)
 
@@ -6,7 +6,7 @@ Skill cho Claude Code: từ tên một ngành ra báo cáo ngành có trích ngu
 lớp. Nếu muốn, làm thêm bảng mapping sản phẩm kèm giả thuyết POC xếp hạng và bộ câu hỏi tìm hiểu
 khách hàng.
 
-> Gõ lệnh: **`/csm-industry-learner`**
+> Gõ lệnh: **`/gtm-industry-research`**
 
 ---
 
@@ -20,7 +20,7 @@ Trong những quá trình này, hiểu về ngành của họ và nắm bắt đ
 Từ đó mới có thể mapping những pain point đó với các tính năng sản phẩm mình đang có, cũng như những
 giá trị mình có thể tạo ra cho họ.
 
-Vấn đề là phần lớn CSM và sales tìm hiểu ngành bằng cách đọc báo cáo quy mô thị trường và danh sách
+Vấn đề là phần lớn người làm GTM (CSM, sales...) tìm hiểu ngành bằng cách đọc báo cáo quy mô thị trường và danh sách
 top player. Nghe có vẻ nắm rõ tình hình nhưng hiếm khi giúp đặt được câu hỏi sắc trong buổi tìm hiểu
 khách hàng.
 
@@ -124,7 +124,7 @@ Chỉ vậy thôi. Không cần CLI, không cần xác thực, không cần API 
 Chỉ 1 dòng, chạy trong terminal hoặc dán thẳng vào Claude Code:
 
 ```bash
-mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/csm-industry-learner.git ~/.claude/skills/csm-industry-learner
+mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/gtm-industry-research.git ~/.claude/skills/gtm-industry-research
 ```
 
 Khởi động lại Claude Code để nó nạp skill mới.
@@ -136,7 +136,7 @@ Khởi động lại Claude Code để nó nạp skill mới.
 ```
 your-plugin/
   skills/
-    csm-industry-learner/
+    gtm-industry-research/
       SKILL.md
       references/
 ```
@@ -146,7 +146,7 @@ your-plugin/
 Trong Claude Code:
 
 ```
-/csm-industry-learner logistics tại Việt Nam
+/gtm-industry-research logistics tại Việt Nam
 ```
 
 Kỳ vọng: skill hỏi 2-4 câu ngắn để chốt phạm vi, nghiên cứu bằng nhiều WebSearch song song, rồi cho
@@ -155,7 +155,7 @@ xem bản nháp báo cáo kèm trích dẫn `[S#]` trước khi ghi bất kỳ f
 ## Cách dùng
 
 ```
-/csm-industry-learner <tên ngành, ví dụ "bán lẻ tiện lợi tại Việt Nam">
+/gtm-industry-research <tên ngành, ví dụ "bán lẻ tiện lợi tại Việt Nam">
 ```
 
 Bạn sẽ được hỏi vài câu ngắn để chốt phạm vi trước (lát cắt ngành, thị trường và quy mô, độ sâu
