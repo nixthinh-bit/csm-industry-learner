@@ -52,7 +52,7 @@ Mẫu truy vấn:
 - `"<ngành>" mùa cao điểm thấp điểm Việt Nam`
 - `<công ty niêm yết trong ngành> báo cáo thường niên "rủi ro" filetype:pdf`
 
-Vì sao CSM cần: biên mỏng thì mọi lập luận giá trị phải quy ra tiền, không được nói "tiện lợi hơn".
+Vì sao GTM cần: biên mỏng thì mọi lập luận giá trị phải quy ra tiền, không được nói "tiện lợi hơn".
 Mùa vụ quyết định lúc nào khách có thể triển khai. Đưa kế hoạch onboarding vào đúng mùa cao điểm là
 cách chắc chắn nhất để dự án đứng hình.
 
@@ -74,7 +74,7 @@ Mẫu truy vấn:
 - Tin tuyển dụng của các vị trí nối giữa hai phòng ban (điều phối, kế hoạch, QC), JD của họ mô tả
   chính xác các điểm bàn giao.
 
-Vì sao CSM cần: pain gần như luôn nằm ở chỗ bàn giao, không nằm trong lòng một phòng ban. Trong lòng
+Vì sao GTM cần: pain gần như luôn nằm ở chỗ bàn giao, không nằm trong lòng một phòng ban. Trong lòng
 một phòng ban người ta đã tự tối ưu rồi, chỗ bàn giao thì không ai sở hữu.
 
 Cạm bẫy: quy trình trên giấy không phải quy trình thực tế. Đánh dấu rõ cái nào lấy từ SOP/tài liệu
@@ -100,7 +100,7 @@ số xuất hiện trong phần "yêu cầu/chỉ tiêu" là KPI, tên phần m�
 Câu "báo cáo cho ai" trong JD là thứ nuôi sơ đồ *ai đo ai* của Lớp 3. Tra là để vẽ được sơ đồ đó,
 không phải để có thêm một bảng.
 
-Vì sao CSM cần: người dùng chỉ đổi hành vi khi cái mới giúp họ đẹp KPI. Không biết KPI thì mọi kế
+Vì sao GTM cần: người dùng chỉ đổi hành vi khi cái mới giúp họ đẹp KPI. Không biết KPI thì mọi kế
 hoạch adoption đều là đoán.
 
 Cạm bẫy: KPI trong JD tuyển dụng là KPI được công bố, KPI thật đôi khi khác. Đánh dấu `H#` khi suy ra
@@ -122,7 +122,7 @@ Mẫu truy vấn:
 Khi tìm được một hệ thống, tìm luôn xem nó gắn vào bước nào của Lớp 2. Đó là thứ nuôi *bản đồ hệ
 thống*, và bước nào không có hệ thống nào gắn vào chính là khoảng trống đáng chú ý nhất.
 
-Vì sao CSM cần: sai từ vựng là mất uy tín trong 5 phút đầu. Hệ thống hiện có quyết định bạn ở vị thế
+Vì sao GTM cần: sai từ vựng là mất uy tín trong 5 phút đầu. Hệ thống hiện có quyết định bạn ở vị thế
 tích hợp hay thay thế, hai câu chuyện bán hàng hoàn toàn khác nhau, và nhầm thì mất deal.
 
 Cạm bẫy: đừng chép định nghĩa sách vở. Một thuật ngữ có định nghĩa chuẩn nhưng người trong nghề gọi
@@ -142,7 +142,7 @@ Mẫu truy vấn:
 - `"<ngành>" yêu cầu lưu trữ hồ sơ chứng từ bao nhiêu năm`
 - `"<ngành>" làm việc theo ca an toàn lao động`
 
-Vì sao CSM cần: đây là thứ giết POC nhiều nhất và gần như luôn bị phát hiện quá muộn. Người dùng
+Vì sao GTM cần: đây là thứ giết POC nhiều nhất và gần như luôn bị phát hiện quá muộn. Người dùng
 tuyến đầu không có laptop, không có email công ty, hoặc không được dùng điện thoại trong ca. Bất kỳ
 điều nào trong đó cũng đủ làm hỏng một kế hoạch triển khai đẹp trên giấy.
 

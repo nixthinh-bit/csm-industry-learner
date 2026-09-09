@@ -102,7 +102,7 @@ Trạng thái: `⬜ chưa hỏi` · `✅ khách xác nhận` · `❌ khách bác
 - **Kiếm tiền trên đơn vị gì:** <…> [S#]
 - **Biên lợi nhuận điển hình:** <…> [S#]. Cỡ mẫu: <n> doanh nghiệp
 - **Cơ cấu chi phí lớn nhất:** <…> [S#]
-- **Ý nghĩa với CSM:** <1–2 câu: biên mỏng hay dày ảnh hưởng thế nào tới cách lập luận giá trị>
+- **Ý nghĩa với GTM:** <1–2 câu: biên mỏng hay dày ảnh hưởng thế nào tới cách lập luận giá trị>
 
 **Lịch mùa vụ:**
 

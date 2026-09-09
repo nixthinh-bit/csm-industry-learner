@@ -5,13 +5,13 @@
 One line, in a terminal or pasted straight into Claude Code:
 
 ```bash
-mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/csm-industry-learner.git ~/.claude/skills/csm-industry-learner
+mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/gtm-industry-research.git ~/.claude/skills/gtm-industry-research
 ```
 
 Then in Claude Code:
 
 ```
-/csm-industry-learner
+/gtm-industry-research
 ```
 
 ## As part of a plugin
@@ -21,13 +21,13 @@ Drop this folder under your plugin's `skills/` directory:
 ```
 your-plugin/
   skills/
-    csm-industry-learner/
+    gtm-industry-research/
       SKILL.md
       references/
 ```
 
 At runtime the skill resolves `SKILL_DIR` to its own folder
-(`${CLAUDE_PLUGIN_ROOT}/skills/csm-industry-learner`), so references are found either way.
+(`${CLAUDE_PLUGIN_ROOT}/skills/gtm-industry-research`), so references are found either way.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ CRM, or any third-party service. Output is a local Markdown file.
 In Claude Code, run:
 
 ```
-/csm-industry-learner <any industry you're curious about>
+/gtm-industry-research <any industry you're curious about>
 ```
 
 Expected: the skill first checks `~/Downloads/industry-library/_index.md` (silently, if it doesn't

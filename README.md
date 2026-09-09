@@ -1,10 +1,10 @@
-# csm-industry-learner
+# gtm-industry-research
 
 A Claude Code skill: from an industry name to a source-cited industry report, built on a 5-layer
 operating framework. Optionally it also builds a product-mapping brief with ranked POC hypotheses
 and discovery questions.
 
-> Trigger: **`/csm-industry-learner`**
+> Trigger: **`/gtm-industry-research`**
 
 **[🇬🇧 English](#-english) · [🇻🇳 Tiếng Việt](README.vi.md)**
 
@@ -118,7 +118,7 @@ That's it. No CLI, no auth, no API keys.
 One line, in a terminal or pasted straight into Claude Code:
 
 ```bash
-mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/csm-industry-learner.git ~/.claude/skills/csm-industry-learner
+mkdir -p ~/.claude/skills && git clone https://github.com/nixthinh-bit/gtm-industry-research.git ~/.claude/skills/gtm-industry-research
 ```
 
 Restart Claude Code so it picks up the new skill.
@@ -130,7 +130,7 @@ Drop this folder under your plugin's `skills/` directory:
 ```
 your-plugin/
   skills/
-    csm-industry-learner/
+    gtm-industry-research/
       SKILL.md
       references/
 ```
@@ -140,7 +140,7 @@ your-plugin/
 In Claude Code:
 
 ```
-/csm-industry-learner logistics in Vietnam
+/gtm-industry-research logistics in Vietnam
 ```
 
 Expected: the skill asks 2-4 short scoping questions, researches with parallel WebSearch calls, then
@@ -149,7 +149,7 @@ shows a draft report with `[S#]` citations before writing anything to disk.
 ## Usage
 
 ```
-/csm-industry-learner <industry, e.g. "convenience retail in Vietnam">
+/gtm-industry-research <industry, e.g. "convenience retail in Vietnam">
 ```
 
 You'll get a few short scoping questions first (industry slice, market and scale, research depth,

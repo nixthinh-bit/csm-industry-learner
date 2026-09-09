@@ -1,9 +1,9 @@
 ---
-name: csm-industry-learner
-description: Học nhanh một ngành/domain mới theo khung 5 lớp (kinh tế đơn vị · chuỗi quy trình lõi · vai trò×KPI · từ vựng & hệ thống · ràng buộc cứng) bằng nghiên cứu web có trích nguồn, rồi (tuỳ chọn) mapping sang sản phẩm của user thành bảng giá trị + giả thuyết POC + câu hỏi discovery làm rõ doanh nghiệp cụ thể khác chuẩn ngành ở đâu. Dùng khi CSM/pre-sales/sales chuẩn bị bước vào một ngành mới, cần hiểu quy trình vận hành và ngôn ngữ của ngành trước khi gặp khách, cần chuẩn bị kế hoạch triển khai/onboarding/POC phù hợp ngành, hoặc cần biết sản phẩm mình gắn vào chỗ nào trong ngành đó. Đầu ra là file Markdown local, viết theo ngôn ngữ user đang dùng. Kích hoạt bằng /csm-industry-learner.
+name: gtm-industry-research
+description: Học nhanh một ngành/domain mới theo khung 5 lớp (kinh tế đơn vị · chuỗi quy trình lõi · vai trò×KPI · từ vựng & hệ thống · ràng buộc cứng) bằng nghiên cứu web có trích nguồn, rồi (tuỳ chọn) mapping sang sản phẩm của user thành bảng giá trị + giả thuyết POC + câu hỏi discovery làm rõ doanh nghiệp cụ thể khác chuẩn ngành ở đâu. Dùng khi CSM/pre-sales/sales/product marketing hoặc vai trò GTM khác chuẩn bị bước vào một ngành mới, cần hiểu quy trình vận hành và ngôn ngữ của ngành trước khi gặp khách, cần chuẩn bị kế hoạch triển khai/onboarding/POC phù hợp ngành, hoặc cần biết sản phẩm mình gắn vào chỗ nào trong ngành đó. Đầu ra là file Markdown local, viết theo ngôn ngữ user đang dùng. Kích hoạt bằng /gtm-industry-research.
 ---
 
-# CSM Industry Learner: học một ngành theo 5 lớp, rồi mapping vào sản phẩm
+# GTM Industry Research: học một ngành theo 5 lớp, rồi mapping vào sản phẩm
 
 > **⚠️ LUẬT CÔNG CỤ (bắt buộc).** Nghiên cứu công khai đi qua **WebSearch / WebFetch**. Skill này
 > không dùng `lark-cli` và không tạo Lark Doc. Đầu ra là file Markdown trên máy. Nếu user muốn đưa
@@ -22,7 +22,7 @@ description: Học nhanh một ngành/domain mới theo khung 5 lớp (kinh tế
 > kèm theo. Đây là cách hỏng phổ biến nhất của nghiên cứu ngành, và là thứ làm mất uy tín nhanh nhất
 > khi ngồi trước người trong nghề.
 
-`SKILL_DIR` là thư mục chứa file này (thường `~/.claude/skills/csm-industry-learner`).
+`SKILL_DIR` là thư mục chứa file này (thường `~/.claude/skills/gtm-industry-research`).
 
 `LIBRARY` là `~/Downloads/industry-library`, thư viện ngành tích luỹ qua nhiều lần chạy.
 
